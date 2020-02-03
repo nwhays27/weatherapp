@@ -5,22 +5,20 @@
   <meta charset="utf-8">
   <title>Weather App</title>
 </head>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+<link rel="stylesheet" href="assets/style.css">
 
 <body>
-  <div class="jumbotron">
-    <h1 class="display-4">Welcome to the Weather App!</h1>
-    <div class="city"></div>
-  <div class="wind"></div>
-  <div class="humidity"></div>
-  <div class="temp"></div>
-    <hr class="my-4">
-    <p>You can look up a city in the search bar below.</p>
-      <div id="search-bar">
-        <input type="text" name="search" value="" autocomplete="">
-      </div>
+  <div class="input">
+    <input type="text" class="inputValue" placeholder="Enter city name here...">
+    <input type="submit" value="Submit" class="button">
   </div>
-  
+
+  <div class="display">
+    <h1 class="name"></h1>
+    <p class="description"></p>
+    <p class="temp"></p>
+  </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script type="text/javascript" src="script.js"></script>
 </body>
