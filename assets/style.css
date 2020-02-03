@@ -1,0 +1,153 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("./background.jpg");
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  
+  .main {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 2px solid red; */
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+    border: 0.5px solid #d6e4f2;
+    border-radius: 4px;
+    margin-bottom: 50px;
+  }
+  
+  .search-bar input {
+    border: 1px solid #d6e4f2;
+    background-color: #d6e4f2;
+    width: 450px;
+    height: 50px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-size: 15px;
+    padding-left: 15px;
+  }
+  
+  .search-bar button {
+    background-color: #d6e4f2;
+  }
+  
+  .search-bar button i {
+    font-size: 20px;
+    padding-top: 12.5px;
+    padding-bottom: 12.5px;
+    padding-left: 14px;
+    padding-right: 14px;
+    background-color: #d6e4f2;
+    color: gray;
+    border: 0.5px solid #d6e4f2;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  
+  /* WEATHER CARD */
+  
+  .weather-card {
+    color: #1c1e1f;
+    background-color: #d7e5f3;
+  }
+  
+  .info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border-bottom: 1px solid #bac8d6;
+  }
+  
+  .city-details {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: 1px solid #bac8d6;
+  }
+  
+  #celsius,
+  #fahrenheit {
+    cursor: pointer;
+  }
+  
+  .info .date-time {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #date {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+  
+  #time {
+    font-size: 15px;
+  }
+  
+  .icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .forecast {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  
+  #temperature {
+    font-size: 35px;
+  }
+  
+  .wind,
+  .pressure,
+  .humidity {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #time {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  
+  .wind p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .pressure p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .humidity p {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
